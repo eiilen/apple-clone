@@ -100,7 +100,7 @@ const Model = () => {
 
                 <div className="mx-auto w-full">
                     <p className='text-sm font-light text-center 
-                    mb-5'>{model.title}</p>
+                    mb-5'>{size === 'small' ? model.title : model.title.slice(0, 13) + ' Max ' + model.title.slice(13)}</p>
 
                     <div className='flex-center'>
                         <ul className='color-container'>
